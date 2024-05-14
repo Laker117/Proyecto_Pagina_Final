@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Tilt Neon", sans-serif;
+}
+
 .menu-fijo{
     position: fixed;
 }
@@ -8,6 +16,7 @@
     font-size: 20px;
 }
 
+<<<<<<< HEAD
 .text-info{
     font-size: 18px;
     color: black;
@@ -26,4 +35,243 @@ img.img-thumbnail{
 .space{
     height: 10px;
     background-color: aliceblue;
+=======
+/* ------------------------------------------------------------------------------------------------ Login ------------------ */
+
+.login-background{
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/Wallpapers/758168.jpg);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    width: 80%;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.btn-cont-login{
+    width: 75%;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-login{
+    width: 250px;
+    height: 50px;
+    background-color: #efb810;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-login:hover{
+    background-color: red;
+    color: #ffffff;
+    border-bottom: 5px solid #ffffff;
+}
+
+/* ------------------------------------------------------------------------------------------------ Iniciar sesion ------------------ */
+
+.iniciar-background{
+    width: 100%;
+    height: 735px;
+    background-image: url(../img/Wallpapers/Untitled\ Project\ \(10\).jpg);
+    background-size: cover;
+
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.crear-background{
+    width: 100%;
+    height: 735px;
+    background-image: url(../img/Wallpapers/Web_Photo_Editor\ \(1\).jpg);
+    background-size: cover;
+
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.crear-datos-background{
+    width: 100%;
+    height: 735px;
+    background-color: red;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crear-datos-background-2{
+    width: 90%;
+    height: 735px;
+    background-color: #000000;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iniciar-container{
+    width: 43%;
+    height: 600px;
+}
+
+.iniciar-titulo{
+    font-weight: bold;
+    font-size: 60px;
+    letter-spacing: 2px;
+    color: red;
+
+    display: flex;
+    justify-content: center;
+}
+
+.iniciar-txt{
+    padding: 20px 0;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.iniciar-txt-2{
+    padding: 25px 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+
+    display: flex;
+}
+
+.center{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-iniciar{
+    width: 250px;
+    height: 50px;
+    background-color: red;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-iniciar:hover{
+    opacity: 0.75;
+}
+
+.btn-iniciar-enviar{
+    width: 140px;
+    height: 50px;
+    background-color: #efb810;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.sep-fixed{
+    width: 50px;
+    height: 250px;
+}
+
+/* ------------------------------------------------------------------------------------------------ Footer ------------------ */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    background-color: #000000;
+}
+
+.footer-mini-rojo{
+    width: 100%;
+    height: 10px;
+    background-color: red;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.footer-conta{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.footer-section{
+    padding: 20px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.footer-titulo{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    background-color: red;
+    color: #ffffff;
+}
+
+.footer-txt{
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.spam-footer{
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.footer-back{
+    background-color: #000000;
+    padding: 0 10px;
+>>>>>>> b6ff7bbac41628d674d0fb3c90cfb5cb8a757348
 }

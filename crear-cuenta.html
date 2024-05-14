@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel</title>
+    <title>Marvel: Crear cuenta</title>
     <!-- Icono en la pestaña -->
     <link rel="icon" href="img/logo-pestaña-marvel.jpg"> 
     <!-- Bootstrap css -->
@@ -63,8 +63,149 @@
         </nav>
     </div>
 
+    <section class="crear-background">
+        <div class="iniciar-container">
+            <p class="iniciar-titulo">
+                Crear cuenta:
+            </p>
+
+            <div class="iniciar-txt">
+                <p>> Ingresa con tu número telefónico:</p>
+
+                <div class="flex">
+                    <input size="25" placeholder="+52 XXX - XXX - XXXX" required/>
+                    
+                    <p>ㅤ</p>
+                    <div class="btn-iniciar-enviar">
+                        Enviar
+                    </div>
+                </div>
+            </div>
+
+            <div class="iniciar-txt">
+                <div class="center">
+                    <a href="https://accounts.google.com/InteractiveLogin/signinchooser?ifkv=AaSxoQwGeYjiXy__fEoPzbr5dEF8XvvoR_FB-8g767Ddi7gCV8N74Vn--TMsLGQo_ZXKjbWyZ_nS_g&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="btn-iniciar">
+                        Accede desde google
+                    </a>
+                </div>
+            </div>
+
+            <div class="iniciar-txt">
+                <p>> Ingresa el código de verificación:</p>
+
+                <div class="flex">
+                    <input size="25" placeholder="XX - XX" id="codigo" required/>
+                    
+                    <p>ㅤ</p>
+                    <div class="btn-iniciar-enviar" onclick="crearCuenta()">
+                        Continuar
+                    </div>
+                </div>
+            </div>
+
+            <div class="iniciar-txt-2">
+                <p>
+                    ¿Aún no lo has recibido? 
+                    <a href="#">
+                        Presiona aquí para reenviar
+                    </a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer> <!------------------------------------------------------------------------------- Footer -->
+        <div class="footer-mini-rojo"></div>
+
+        <div class="footer">
+            <div class="footer-container">
+                <a href="index.html" class="footer-section">
+                    <img src="img/logo-pestaña-marvel.jpg" height="250px">
+                </a>
+            </div>
+    
+            <div class="footer-container">
+                <div class="footer-section">
+                    <p class="footer-titulo">
+                        Contacto
+                    </p>
+    
+                    <div>
+                        <p class="footer-txt">
+                            <img src="img/LogosFooter/telefono.jpg" height="28px" class="footer-back">
+                            
+                            +1 307-734-6001
+                        </p>
+                    </div>
+    
+                    <div>
+                        <p class="footer-txt">
+                            <img src="img/LogosFooter/correo.jpg" height="28px" class="footer-back">
+
+                            atencioncliente.marvel@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-container">
+                <div class="footer-section">
+                    <p class="footer-titulo">
+                        Páginas legales
+                    </p>
+    
+                    <div>
+                        <p class="footer-txt">
+                           Condiciones de venta
+                        </p>
+                    </div>
+    
+                    <div>
+                        <p class="footer-txt">
+                           Política de privacidad
+                        </p>
+                    </div>
+    
+                    <div>
+                        <p class="footer-txt">
+                           Política de Cookies
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-container">
+                <div class="footer-section">
+                    <p class="footer-titulo">
+                        Cuentas oficiales
+                    </p>
+    
+                    <p class="footer-txt">
+                        <a href="https://www.facebook.com/Marvel/"><img src="img/LogosFooter/facebook.jpg" height="60px" class="footer-back"></a>
+
+                        <a href="https://twitter.com/marvel"><img src="img/LogosFooter/twitter.jpg" height="60px" class="footer-back"></a>
+                    </p>
+
+                    <p class="footer-txt">
+                        <a href="https://www.instagram.com/marvel/"><img src="img/LogosFooter/instagram.jpg" height="60px" class="footer-back"></a>
+
+                        <a href="https://www.youtube.com/marvel"><img src="img/LogosFooter/youtube.jpg" height="60px" class="footer-back"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-conta">
+            <p class="spam-footer">
+                2024 ©Marvel. Todos los derechos reservados | Disney Publishing Worldwide
+            </p>
+        </div>
+    </footer>
+
     <!-- Script -->
     <script src="file/script.js"></script> 
+    <!-- Script SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
 </body>
