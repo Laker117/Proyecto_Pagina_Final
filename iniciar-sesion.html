@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel: Crear cuenta</title>
+    <title>Marvel: Iniciar sesión</title>
     <!-- Icono en la pestaña -->
     <link rel="icon" href="img/logo-pestaña-marvel.jpg"> 
     <!-- Bootstrap css -->
@@ -63,53 +63,43 @@
         </nav>
     </div>
 
-    <section class="crear-background">
+    <section class="iniciar-background">
         <div class="iniciar-container">
             <p class="iniciar-titulo">
-                Crear cuenta:
+                Iniciar sesión:
             </p>
 
             <div class="iniciar-txt">
-                <p>> Ingresa con tu número telefónico:</p>
+                <p>> Nombre de usuario/correo electrónico:</p>
 
-                <div class="flex">
-                    <input size="25" placeholder="+52 XXX - XXX - XXXX" required/>
-                    
-                    <p>ㅤ</p>
-                    <div class="btn-iniciar-enviar">
-                        Enviar
-                    </div>
-                </div>
+                <input size="40" placeholder="Mínimo de cinco caracteres" required/>
+            </div>
+
+            <div class="iniciar-txt">
+                <p>> Contraseña:</p>
+
+                <input size="40" type="password" placeholder="Mínimo de cinco caracteres" required/>
+            </div>
+
+            <div class="iniciar-txt-2">
+                <a href="recuperar-contraseña.html">
+                    ¿Olvidaste la contraseña?
+                </a>
+
+                <p>ㅤㅤ</p>
+
+                <p>
+                    <input type="checkbox" size="10" required>
+                    Mantener la sesión iniciada
+                </p>
             </div>
 
             <div class="iniciar-txt">
                 <div class="center">
-                    <a href="https://accounts.google.com/InteractiveLogin/signinchooser?ifkv=AaSxoQwGeYjiXy__fEoPzbr5dEF8XvvoR_FB-8g767Ddi7gCV8N74Vn--TMsLGQo_ZXKjbWyZ_nS_g&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="btn-iniciar">
-                        Accede desde google
+                    <a href="#" class="btn-iniciar" onclick="iniciarSesion()">
+                        Acceder
                     </a>
                 </div>
-            </div>
-
-            <div class="iniciar-txt">
-                <p>> Ingresa el código de verificación:</p>
-
-                <div class="flex">
-                    <input size="25" placeholder="XX - XX" id="codigo" required/>
-                    
-                    <p>ㅤ</p>
-                    <div class="btn-iniciar-enviar" onclick="crearCuenta()">
-                        Continuar
-                    </div>
-                </div>
-            </div>
-
-            <div class="iniciar-txt-2">
-                <p>
-                    ¿Aún no lo has recibido? 
-                    <a href="#">
-                        Presiona aquí para reenviar
-                    </a>.
-                </p>
             </div>
         </div>
     </section>
@@ -204,8 +194,6 @@
 
     <!-- Script -->
     <script src="file/script.js"></script> 
-    <!-- Script SweetAlert -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
 </body>
