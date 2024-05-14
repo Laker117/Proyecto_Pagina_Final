@@ -16,7 +16,6 @@
     font-size: 20px;
 }
 
-<<<<<<< HEAD
 .text-info{
     font-size: 18px;
     color: black;
@@ -35,7 +34,9 @@ img.img-thumbnail{
 .space{
     height: 10px;
     background-color: aliceblue;
-=======
+
+}
+
 /* ------------------------------------------------------------------------------------------------ Login ------------------ */
 
 .login-background{
@@ -212,8 +213,6 @@ img.img-thumbnail{
     height: 250px;
 }
 
-/* ------------------------------------------------------------------------------------------------ Footer ------------------ */
-
 .footer{
     display: flex;
     justify-content: center;
@@ -273,5 +272,4 @@ img.img-thumbnail{
 .footer-back{
     background-color: #000000;
     padding: 0 10px;
->>>>>>> b6ff7bbac41628d674d0fb3c90cfb5cb8a757348
 }

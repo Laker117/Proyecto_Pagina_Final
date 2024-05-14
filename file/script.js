@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const marvel = {
     render: () => {
         const urlAPI = 'https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=cb5213e18d90e0401505c296809e19d2&hash=16ee065805f4ab73dc5f71edda301c0a';
@@ -48,7 +48,6 @@ const marvel1 = {
     }
 };
 marvel1.render();
-=======
 
 function crearCuenta() {
     window.location="crear-datos.html";
@@ -61,4 +60,3 @@ function crearDatos(){
 function iniciarSesion(){
     window.location="index.html";
 }
->>>>>>> b6ff7bbac41628d674d0fb3c90cfb5cb8a757348
