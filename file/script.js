@@ -49,6 +49,58 @@ const marvel1 = {
 };
 marvel1.render();
 
+const marvel2 = {
+    render: () => {
+        
+        const urlAPI = 'https://gateway.marvel.com:443/v1/public/events?ts=1&apikey=cb5213e18d90e0401505c296809e19d2&hash=16ee065805f4ab73dc5f71edda301c0a';
+        const container2 = document.querySelector('#marvel-row2');
+        let contentHTML2 = '';
+
+        fetch(urlAPI)
+            .then(res => res.json())
+            .then((json) => {
+                for (const hero2 of json.data.results) {
+                    let urlHero2 = hero2.urls[0].url;
+                    contentHTML2 += `
+                        <div class="col-md-4">
+                        <a href="${urlHero2}" target="_blank">
+                            <img src="${hero2.thumbnail.path}.${hero2.thumbnail.extension}" alt="${hero2.name}" class="img-thumbnail">
+                        </a>
+                        <h3 class="title">${hero2.title}</h3>
+                        </div> `;
+                }
+                container2.innerHTML = contentHTML2;
+            })
+    }
+};
+marvel2.render();
+
+const marvel3 = {
+    render: () => {
+        
+        const urlAPI = 'https://gateway.marvel.com:443/v1/public/stories?ts=1&apikey=cb5213e18d90e0401505c296809e19d2&hash=16ee065805f4ab73dc5f71edda301c0a';
+        const container3 = document.querySelector('#marvel-row3');
+        let contentHTML3 = '';
+
+        fetch(urlAPI)
+            .then(res => res.json())
+            .then((json) => {
+                for (const hero3 of json.data.results) {
+                    let urlHero3 = hero3.urls[0].url;
+                    contentHTML3 += `
+                        <div class="col-md-4">
+                        <a href="${urlHero3}" target="_blank">
+                            <img src="${hero3.thumbnail.path}.${hero3.thumbnail.extension}" alt="${hero3.name}" class="img-thumbnail">
+                        </a>
+                        <h3 class="title">${hero3.title}</h3>
+                        </div> `;
+                }
+                container3.innerHTML = contentHTML3;
+            })
+    }
+};
+marvel3.render();
+
 function crearCuenta() {
     window.location="crear-datos.html";
 }
